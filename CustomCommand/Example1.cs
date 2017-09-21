@@ -3,7 +3,7 @@
     using Sitecore.Data;
     using Sitecore.Shell.Framework.Commands;
 
-    public class DoSomething : Command
+    public class Example1 : Command
     {
         public override void Execute(CommandContext context) { }
 
