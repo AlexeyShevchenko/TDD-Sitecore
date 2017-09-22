@@ -29,7 +29,7 @@
             return CommandState.Hidden;
         }
 
-        public virtual DateTime GetDateTimeNow()
+        protected virtual DateTime GetDateTimeNow()
         {
             return DateTime.Now;
         }

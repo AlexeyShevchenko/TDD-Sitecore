@@ -24,7 +24,7 @@
                 {
                     new DbItem("child 1")
                     {
-                        new DbField("Start Date") { Value = "20170000T000000" }
+                        new DbField("Start Date") { Value = "20170101T000000" }
                     }
                 }
             })
@@ -38,7 +38,7 @@
         }
 
         [TestCase]
-        public void CommandState_ShouldBeHidden_WhenExistItemContainsStartDateLargerDateTimeNow()
+        public void CommandState_ShouldBeEnabled_WhenExistItemContainsStartDateLargerDateTimeNow()
         {
             // arrange
             var folderId = new ID("{B4F0DAD0-B60E-49D9-8332-8DF1A61C5101}");
@@ -69,7 +69,7 @@
     {
         public DateTime FakeDateTimeNow { get; set; }
 
-        public override DateTime GetDateTimeNow()
+        protected override DateTime GetDateTimeNow()
         {
             return FakeDateTimeNow;
         }
