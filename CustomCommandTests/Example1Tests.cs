@@ -48,7 +48,7 @@
         }
 
         [TestCase]
-        public void CommandState_ShouldBeHidden_WhenChildrenExist()
+        public void CommandState_ShouldBeEnabled_WhenChildrenExist()
         {
             // arrange
             var folderId = new ID("{B4F0DAD0-B60E-49D9-8332-8DF1A61C5101}");
