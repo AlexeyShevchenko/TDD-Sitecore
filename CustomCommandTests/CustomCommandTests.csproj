@@ -89,6 +89,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AssertionExampleTests.cs" />
     <Compile Include="CustomFieldTests.cs" />
     <Compile Include="Example2Tests.cs" />
     <Compile Include="Example1Tests.cs" />
